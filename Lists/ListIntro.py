@@ -1,4 +1,6 @@
 # Lists: Ordered,  mutable, allows duplicate elements
+from numba.cpython.listobj import list_copy
+
 myList = ["banana", "cherry", "apple"]
 print(myList)
 
@@ -80,3 +82,26 @@ print(ac)
 # Step 1
 step = myListAgain[::-1]
 print(step)
+
+# Copying List from Existing Lists
+
+list_org =  ["banana", "cherry", "apple"]
+
+
+#list_copy = list_org
+#list_copy = list_org.copy()
+#list_copy = list(list_org)
+list_copy = list_org[:]
+
+list_copy.append("lemon")
+
+print(list_copy)
+print(list_org)
+
+
+#ListComprehension
+anumber = [1,2,3,4,5,6]
+asquared = [i*i for i in anumber]
+
+print(anumber)
+print(asquared)
