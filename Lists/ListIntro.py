@@ -55,3 +55,28 @@ myNumbers.sort()
 print(myNumbers)
 print(sortedNumbers)
 
+
+# Generating Lists
+generatedLists = ["James"] * 10
+print(generatedLists)
+
+
+#Concatinating Lists
+numList = [1,2,3,4,5]
+new_list = myNumbers + numList
+print(new_list)
+
+#Slicing
+myListAgain = [1,2,3,4,5,6,7,8,9]
+
+# [start:stop]
+a =  myListAgain[3:4]
+ab = myListAgain[:5]
+ac = myListAgain[2:]
+print(a)
+print(ab)
+print(ac)
+
+# Step 1
+step = myListAgain[::-1]
+print(step)
